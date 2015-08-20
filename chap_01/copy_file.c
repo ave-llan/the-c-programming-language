@@ -4,10 +4,9 @@
 main()
 {
     int c;
-
-    c = getchar();
-    while (c != EOF) {
+    printf("Ctrl + D to indicate end of file\n");
+    while ((c = getchar()) != EOF)
         putchar(c);
-        c = getchar();
-    }
+    printf("end of file!\n");
+    putchar(c);
 }
